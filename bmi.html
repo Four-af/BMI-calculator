@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMI Calculator</title>
+    <style>body{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: sans-serif;
+      background-image: linear-gradient(110deg, #ade8f4, #00b4d8, #023e8a);
+      min-height: 100vh;
+    }
+    
+    div{
+      width: 500px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      background-image: linear-gradient(190deg,#caf0f8 ,#f1faee);
+      /* background-color: #d8e2dc; */
+      transform: translate(-50%,-50%);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 2px 2px 15px #8ecae6;
+    }
+    
+    h1{
+      font-size: 25px;
+      /* margin-left: 100px;  */
+      text-align: center;
+    }
+    
+    #w, #h{
+      color: #789bce;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 215;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid #457b9d;
+      width: 200px;
+    }
+    #w :focus, #h :focus{
+      border-bottom: 2px solid #457b9d;
+      width: 300px;
+      transition: 0.5s;
+    }
+     #result{
+       color: #1d3557; 
+     }
+    #btn{
+      font-family: inherit;
+      margin-top: 10px;
+      color: #1d3557;
+      background-image: linear-gradient(110deg, #ade8f4, #00b4d8);
+      width: 150px;
+      padding: 10px;
+      border-radius: 30px;
+      outline: none;
+      cursor: pointer;
+    }
+    #btn:hover{
+      box-shadow: 1px 1px #789bce;
+      background-image: linear-gradient(190deg,#caf0f8 ,#f1faee);
+      background-color: #a2d2ff;
+      transition: all ease 0.2s;
+    }    
+    </style>
+        <!-- <link rel="stylesheet" href ="./public/css/bmi.css"  type="text/css"  >
+        <base href="/"> -->
+  </head>
+  <body>
+      <div>
+        <h1>BMI Calculator</h1>
+    <form action="/" method="post">
+            <!-- <input type="text" name="num1" placeholder="First number">
+            <input type="text" name="num2" placeholder="Second number">
+            <button type="submit" name="submit">Calculate</button> -->
+
+        <!-- <script src="script.js"></script> -->
+        <p class="text">Height</p>
+        <input name="h" type="text" id="h" placeholder="Enter your height">
+        <p class="text">Weight</p>
+        <input name="w" type="text" id="w" placeholder="Enter your weight">
+        <p id="result"></p>
+        <button type="submit" name="submit" id="btn" onclick="BMI()">Calculate</button>
+        <p id="info">Enter height in cm and weight in kg</p>
+      </div>
+    </form> 
+  </body>
+</html>
